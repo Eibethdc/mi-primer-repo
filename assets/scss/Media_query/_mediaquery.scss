@@ -1,0 +1,25 @@
+  @media all and (max-width: 900px){
+    .header__nav a{
+        font-size: 20px;
+    .off{
+        display: none;
+    }
+  }
+    .footer__email li a{
+      font-size: 10px;
+    }
+    .footer__subscription h3{
+      font-size: 15px;
+    }
+  }
+  @media all and (max-width: 750px){
+    .body{
+      display: grid;  
+    }
+    .footer{
+      grid-template-columns: 20% 40% 40%;
+    }
+    .article__boxes{
+      flex-wrap: wrap;
+    }
+  }

@@ -1,0 +1,50 @@
+.footer{
+    background-color: #1A3C40;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    color: #fff;
+    &__logo{
+      grid-column: 1 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 100px;
+        border-radius: 10px;
+      }
+    }
+    &__subscription{
+      grid-column: 2 / 3;
+      display: flex;
+      
+      h3{
+        text-align: center;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: underline;
+      }
+      p {
+        text-align: center;
+      }
+    } 
+    &__email{
+      grid-column: 3 / 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li{
+        list-style: none;
+        padding: 20px;
+        a {
+          font-size: 18px;
+          color: #fff;
+          padding: 0 20px; 
+          :hover{
+            color: #FF731D;
+          }     
+        }
+      }
+    }
+  }

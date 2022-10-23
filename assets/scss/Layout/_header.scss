@@ -1,0 +1,48 @@
+.header{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 100px;
+    margin: 25px;
+    &__logo{
+      grid-column: 1 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 100px;
+        border-radius: 10px;
+      }
+    }
+    &__nav{
+      grid-column: 2 / 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a{
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
+        :hover{
+          color:#FF731D;
+        }
+      }
+    }
+    &__social{
+      grid-column: 4 / 5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a{
+        font-size: 18px;
+        color: #fff;
+        padding: 0 5px;
+        :hover{
+          color: #FF731D;
+        }
+      }
+    }
+  }
